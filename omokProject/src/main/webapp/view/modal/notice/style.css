@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'NeoDunggeunmo';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff') format('woff');
+    font-style: normal;
+}
+
+* {
+    font-family: 'NeoDunggeunmo', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    overflow: hidden;
+    margin: 0;
+}
+
+#btn-open-modal{
+    width: 9vw;
+    height: 6vh;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    border-color: #d9d9d9;
+    margin: 20px
+}
+
+#modal{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    width: 50vw;
+    aspect-ratio: 4 / 3; /* ← 예시: 4:3 비율 */
+    background: url("/img/modal_background.png") no-repeat center center;
+    background-size: contain;
+}
+
+#text{
+    background: url("/img/notice.png") no-repeat center center;
+    background-size: contain;
+    height: 25%;
+    margin-top: 9%;
+    margin-bottom: 4%;
+}
+
+#info{
+    height: 29%;
+    align-items: center;
+    padding: 2.5% 17%;
+    overflow: hidden; /* ← 튀어나오는 거 방지 */
+}
+.explanation{
+    flex: 1;
+    font-size: clamp(12px, 2vw, 30px);
+    word-break: keep-all;
+    min-width: 120px;
+    align-self: flex-start;
+    padding: 3% 0;
+    text-align: center;
+}
+.highlight {
+    color: #f60101;
+}
+
+
+#btn{
+    height: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 2%;
+    gap: 4%;
+}
+#re_btn{
+    height: 45%;
+    width: 25%;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    border-color: #d9d9d9;
+    font-size: clamp(8px, 1.5vw, 25px);
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+#re_btn:hover{
+    background-color: #bdbdbd;
+    border-color: #bdbdbd;
+}
+#re_btn:active{
+    background-color: #a6a6a6;
+    border-color: #a6a6a6;
+}
+
+#go_main_btn{
+    height: 45%;
+    width: 25%;
+    background-color: #abd0ff;
+    border-radius: 10px;
+    border-color: #abd0ff;
+    font-size: clamp(8px, 1.5vw, 25px);
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+#go_main_btn:hover{
+    background-color: #a0caff;
+    border-color: #a0caff;
+}
+#go_main_btn:active{
+    background-color: #9acaff;
+    border-color: #9acaff;
+}

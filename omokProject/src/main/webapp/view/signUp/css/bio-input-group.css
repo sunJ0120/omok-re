@@ -1,0 +1,43 @@
+#bio_group {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(2px, 0.8vh, 8px); /* ✅ gap 축소 */
+    width: 100%;
+    margin-bottom: clamp(8px, 2vh, 20px); /* ✅ margin 축소 */
+    box-sizing: border-box;
+}
+
+#bio_input {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height: clamp(48px, 8vh, 100px); /* ✅ 전체 높이 축소 */
+    box-sizing: border-box;
+}
+
+textarea {
+    border: 4px solid transparent; /* ✅ border 축소 */
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    flex: 1;
+    padding: 8px 12px; /* ✅ padding 축소 */
+    font-size: clamp(14px, 2.5vw, 20px); /* ✅ 폰트 축소 */
+    border-radius: 10px;
+    box-sizing: border-box;
+    resize: none;
+    min-width: 0;
+}
+
+textarea:focus {
+    outline: none;
+    box-sizing: border-box;
+    border: #207600 solid 4px; /* ✅ focus border도 축소 */
+}
+
+.form-counter {
+    font-size: clamp(12px, 2vw, 18px); /* ✅ 폰트 축소 */
+    text-align: right;
+    color: gray;
+    word-break: keep-all;
+}

@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'NeoDunggeunmo';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff') format('woff');
+    font-style: normal;
+}
+
+* {
+    font-family: 'NeoDunggeunmo', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    overflow: hidden;
+    margin: 0;
+}
+
+#btn-open-modal{
+    width: 9vw;
+    height: 6vh;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    border-color: #d9d9d9;
+    margin: 20px
+}
+
+#resultModal{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#resultBoard {
+    width: 50vw;
+    aspect-ratio: 4 / 3; /* ← 예시: 4:3 비율 */
+    background: url("/img/modal_background.png") no-repeat center center;
+    background-size: contain;
+    min-width: 100px;
+}
+
+#text{
+    background: url("/img/win_text.png") no-repeat center center;
+    background-size: contain;
+    height: 25%;
+    margin-top: 9%;
+}
+
+#info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    padding: 0 17%;
+    overflow: hidden; /* ← 튀어나오는 거 방지 */
+}
+#user_img{
+    flex-basis: 35%;
+    aspect-ratio: 1 / 1;
+    background: url("/img/user_young.png") no-repeat;
+    background-size: contain;
+    min-width: 80px;
+}
+#explanation{
+    flex: 1;
+    font-size: clamp(12px, 2vw, 28px);
+    word-break: keep-all;
+    min-width: 120px;
+    align-self: flex-start;
+    padding: 4% 0;
+}
+#bar {
+    display: flex;
+    height: 300px;
+    background-color: #ddd; /* 전체 바 배경 */
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+    font-size: clamp(10px, 2vw, 22px);
+}
+
+#win_bar {
+    height: 100px;
+    background-color: #4a68c3;
+
+}
+
+#lose_bar {
+    height: 100px;
+    background-color: #f44336; /* 빨간색 - 패 */
+}
+
+
+#btn{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 2%;
+    gap: 4%;
+}
+#go_main_btn, #re_btn{
+    height: 45%;
+    width: 25%;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    border-color: #d9d9d9;
+    font-size: clamp(8px, 1.5vw, 25px);
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+#go_main_btn:hover, #re_btn:hover{
+    background-color: #bdbdbd;
+    border-color: #bdbdbd;
+}
+#go_main_btn:active, #re_btn:active{
+    background-color: #a6a6a6;
+    border-color: #c6c6c6;
+}
+
+#bar_label {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    font-size: clamp(10px, 1.5vw, 14px);
+    padding: 0 5px;
+}
+
+#win_label {
+    color: #4a68c3; /* 승 - 파란색 */
+}
+
+#lose_label {
+    color: #f44336; /* 패 - 빨간색 */
+}
+
+
+

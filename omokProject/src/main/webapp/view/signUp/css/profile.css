@@ -1,0 +1,40 @@
+#profile_input {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 220px; /* ⬅️ 기존 260px → 220px */
+    height: 100%;
+    box-sizing: border-box;
+    gap: clamp(4px, 1vh, 12px); /* ⬅️ gap 축소 */
+}
+
+.profile-wrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: clamp(4px, 0.8vh, 8px); /* ⬅️ 축소 */
+    box-sizing: border-box;
+}
+
+.avatar-random-btn {
+    position: absolute;
+    bottom: clamp(2px, 0.5vh, 6px); /* ⬅️ 위치 여백 소폭 축소 */
+    right: clamp(2px, 0.5vh, 6px);
+    background-color: #F9C631;
+    border: none;
+    border-radius: 50%;
+    width: clamp(20px, 3vw, 28px); /* ⬅️ 버튼 전체 크기 축소 */
+    height: clamp(20px, 3vw, 28px);
+    font-size: clamp(10px, 1.6vw, 14px); /* ⬅️ 텍스트 축소 */
+    cursor: pointer;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#profile {
+    object-fit: cover;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
